@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    
+    //값 입력받기
+    let a = prompt('홀, 짝 입력해주세요');
+
+    //난수 생성
+    com = Math.floor(Math.random() % 2) ;
+
+
+    if( com === 0 && a === '홀'){
+      alert('아니다');
+    } else if( com === 0 && a === '짝'){
+      alert('맞다');
+    } else {
+      alert('맞다') ;
+      break;
+    }
+
+
+
+  </script>
+</body>
+</html>
