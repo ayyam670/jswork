@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주문서</title>
+  <style>
+    #container{
+      border: 1px solid #ccc;
+      width: 800px;
+      margin: 0 auto;
+    }
+    form{
+      padding: 15px;
+    }
+    legend{
+      color: blueviolet;
+      font-weight: bold;
+    }
+    fieldset{
+      border: 1.8px solid #000;
+      margin-bottom: 30px;
+    }
+    fieldset li{
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    .home label{
+      width: 80px;
+      float: left;
+    }
+    .add input{
+      width: 400px;
+    }
+    .button{
+      text-align: center;
+      line-height: 70px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+  <header>
+    <h1>상품 주문서</h1>
+  </header>
+  <form name="form1" action="aaa.jsp" method="post">
+    <fieldset class="home">
+      <legend>개인 정보</legend>
+        <ul>
+          <li>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="여백없이 입력">
+          </li>
+          <li>
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" name="phone" placeholder="연락가능한 번호">
+          </li>
+        </ul>
+    </fieldset>
+    <fieldset class="home">
+      <legend>배송지 정보</legend>
+        <ul>
+          <li class="add">
+            <label for="add">주소</label>
+            <input type="text" id="add" name="add">
+          </li>
+          <li>
+            <label for="number">전화번호</label>
+            <input type="tel" id="number" name="number">
+          </li>
+          <li>
+            <label for="memo">메모</label>
+            <textarea cols="60" rows="5"></textarea>
+          </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+      <legend>주문 정보</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" value="cham" name="fur">
+               경북성주 참외(5kg)
+            </label>
+              <input type="number" id="cham" name="cham" value="0" min="0" max="10">Box
+          </li>
+          <li>
+            <label>
+             <input type="checkbox" value="grape" name="fur">
+            경북영천 포도(5kg)
+            </label>
+             <input type="number" id="grape" name="grape" value="0" min="0"max="10">Box
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" value="water" name="fur">
+            경북영천 수박(5kg)
+            </label>
+            <input type="number" id="water" name="water" value="0" min="0"max="10">Box
+          </li>
+        </ul>
+    </fieldset>
+      <div class="button">
+        <button type="submit">주문하기</button>
+        <button type="reset">다시 작성</button>
+      </div>
+  </form>
+  
+</body>
+</div>
+</html>

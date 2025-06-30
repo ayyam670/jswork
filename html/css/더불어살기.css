@@ -1,0 +1,47 @@
+#container{
+  width: 800px;
+  margin: 0 auto;
+}
+header{
+  background-color: rgb(24, 95, 177);
+  color: #fff;
+  height: 100px;
+  padding: 10px;
+}
+h1{
+  float: left;
+}
+nav{
+  float: right;
+}
+nav li{
+  list-style: none;
+  display: inline-block;
+  margin: 25px 10px;
+  /* float: left; */
+}
+section{
+  border: 3px solid rgb(68, 150, 218);
+  padding: 10px;
+  overflow: hidden;
+}
+section img{
+  float: right;
+  width: 200px;
+  height: 550px;
+  margin: 30px 5px;
+}
+section li{
+  margin: 30px 50px 0px 0px;
+}
+article{
+  margin-top: 50px;
+}
+footer{
+  background-color: rgb(24, 95, 177);
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
+  clear: both;
+}

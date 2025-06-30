@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개발자지원서</title>
+  <style>
+    #container{
+      border: 1px solid #ccc;
+      margin: 0 auto;
+      width: 600px;
+      padding: 30px;
+    }
+    fieldset{
+      border: 0px;
+    }
+    form li{
+      list-style: none;
+      margin: 5px;
+      overflow: hidden;
+    }
+    .num label{
+      width: 60px;
+      display: inline-block;
+    }
+    .button{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <div id="container">
+      <form name="form1" action="aaa.jsp" method="post">
+        <header>
+          <h1>프런트엔드 개발자 지원서</h1>
+          <p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+          <hr>
+        </header>
+          <fieldset class="num">
+            <legend>개인정보</legend>
+                <ul>
+                  <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" placeholder="공백 없이 입력하세요.">
+                  </li>
+                  <li>
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone">
+                  </li>
+                </ul>
+          </fieldset>
+          <fieldset>
+            <legend>지원 분야</legend>
+                <ul>
+                  <li>
+                    <label><input type="radio" name="job">웹 퍼블리싱</label>
+                  </li>
+                  <li>
+                    <label><input type="radio" name="job">웹 애플리케이션 개발</label>
+                  </li>
+                  <li>
+                    <label><input type="radio" name="job">개발 환경 개선</label>
+                  </li>
+                </ul>
+          </fieldset>
+          <fieldset>
+            <legend>지원 동기</legend>
+              <ul>
+                <li>
+                  <label for="memo"></label>
+                  <textarea cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써주세요"></textarea>
+                </li>
+                <li class="button">
+                  <button type="submit">접수하기</button>
+                  <button type="reset">다시 쓰기</button>
+                </li>
+              </ul>
+          </fieldset>
+      </form>
+    </div>
+</body>
+</html>

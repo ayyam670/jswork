@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Jua&display=swap');
+#container{
+      width: 1000px;
+      margin: 0 auto;
+    }
+    .bagel-fat-one-regular {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+    header{
+      background-color: beige;
+    }
+    nav li{
+      display: inline-block;      
+      padding: 5px 10px;
+      margin: 10px 0;
+      border-bottom: 2px solid #aaa;
+      border-radius: 10px;
+    }
+    nav li:hover{
+      border-color: #f00;
+      /* hover = 마우스 올리면 */
+    }
+    a{
+      text-decoration: none;
+      font-weight: bold;
+      /* color: #000; */
+    }
+    a:visited{
+      /* 가상클래스 : */
+      color: #000;
+    }
+    section{
+      background-color: #ddd;
+      padding: 16px;
+    }
+    section ul{
+      text-align: center;
+    }
+    section li{
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+    }
+    article{
+      border: 1px solid #aaa;
+      /* background-color:rgba(255,255,255,0.5); */
+      background-color:rgba(0,0,0,0.1);
+
+      padding: 20px;
+      font-family: "Jua", sans-serif;
+      border-radius: 20px;
+      margin-top: 10px;
+    }
+    figure{
+      text-align: center;
+      opacity: 0.5;
+    }
+    figure:hover{
+      opacity: 1;
+    }
+    .hid{
+      /* visibility: hidden; */
+      /* display: none; */
+      opacity: 0.5;
+    }
+    .hid:hover{
+      opacity: 1;
+    }
+    img{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px #fff;
+      box-shadow: 1px 1px 5px 3px #000;
+      margin: 20px;
+    }
+    /* img:hover{
+      opacity: 1; 다시해보기
+    } */
+    aside{
+      background-color: rgb(211, 121, 121);
+      padding: 10px;
+    }
+    aside li{
+      line-height: 1.5em;
+    }
+    footer{
+      background-color: rgb(119, 37, 37);
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    footer p{
+      margin-top: 0;
+    }
+    .fixed{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: aquamarine;
+      text-align: center;
+      line-height: 70px;
+      position: fixed;
+      bottom: 30px;
+      right: 50px;
+    }
+    .fixed p{
+      margin: 0px;
+    }

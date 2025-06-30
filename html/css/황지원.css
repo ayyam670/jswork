@@ -1,0 +1,21 @@
+#container{
+  width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "맑은 고딕";
+}
+header h1{
+  text-align: center;
+}
+header nav{
+  background-color: #000;
+  color: #fff;
+  width: 1000px;
+}
+nav{
+  float: right;
+}
+nav li{
+  list-style: none;
+  float: left;
+}
