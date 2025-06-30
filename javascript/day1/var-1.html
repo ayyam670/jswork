@@ -7,29 +7,31 @@
 </head>
 <body>
   <script>
-    //사각형 너비를 계산하는 프로그램
+    //두 수의 합을 계산하는 프로그램
 
     //변수선언 (가로, 세로)
-    let width;   //가로
-    let height;  //높이
-    let area;    //면적
+    let num1;   //첫번째 수
+    let num2;  //두번째 수
+    let sum = 0 ;    //덧셈결과
 
 
-    //값을 대입/할당
-    width = 10;
-    height = 20;
+    // 값을 대입/할당
+    // width = 10;
+    // height = 20;
 
     //입력하세요
-    width = prompt('너비를 입력하세요');
-    height = prompt('높이를 입력하세요');
+    // num1 = prompt ('첫번째 수를 입력',5) ;
+    // num2 = prompt ('두번째 수를 입력',5) ;
 
+    num1 = parseInt( prompt ('첫번째 수를 입력',5) );
+    num2 = parseInt( prompt ('두번째 수를 입력',5) );
 
     //면적 계산
-    area = width * height;
+    sum = num1 + num2;
     //결과 출력
     // console.log(width, height, area);
     // console.log(width + height + area);
-    console.log(width, '\n\t\t', height, area);
+    console.log(sum);
 
   </script>
 </body>
