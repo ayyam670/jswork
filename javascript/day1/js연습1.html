@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>js연습</title>
 </head>
 <body>
   <script>
@@ -45,6 +45,89 @@
      /* let a=Number(prompt('숫자를 입력하세요', '숫자'));
 
       a % 2 == 0 || alert('홀수'); */
+
+      //도전 문제 1
+      //1에서 100까지 홀수 합과 짝수 합을 구하는 프로그램을 작성하세요
+
+   /*  let hol = 0 ;
+    let jjac = 0 ;
+
+    for( let i = 1; i <= 100; i++ )
+    {
+     if( i % 2 == 1 )
+      {
+        hol += i ;
+      }
+    }
+      console.log(`홀수의 합 : ${hol}`);
+
+
+
+      for( let i = 1; i <= 100; i++ )
+    {
+     if( i % 2 == 0 )
+      {
+        jjac += i ;
+      }
+    }
+      console.log(`짝수의 합 : ${jjac}`); */
+
+      //도전 문제 2
+      //1에서 100까지 5의 배수의 합을 구하는 프로그램을 작성하세요
+
+      /* let sum = 0 ;
+
+      for( let i = 1; i <= 100; i++)
+      {
+        if( i % 5 == 0){
+          sum += i ;
+        }
+      }
+        console.log(`5의 배수의 합은 ${sum} 이다`) */
+
+
+
+//도전 문제 3
+      //숫자 n을 입력 받아서 n!(팩토리얼)을 계산하세요
+/* 
+      let n = prompt("숫자를 입력해주세요");
+
+      let fac = 1;
+
+
+      for( let i = 1; i <= n; i++ )
+      {
+        fac *= i ;
+      }
+      console.log(`${fac*i++}) */
+
+
+      //도전 문제 5
+      //숫자를 입력 받아 4의 배수인지 아닌지 출력하세요
+
+      let num = prompt("숫자를 입력해주세요");
+
+      if ( num === null)
+      {
+        alert('입력취소')
+      }
+      else
+      {
+        if( num % 4 == 0)
+        { 
+          alert( num + '짝수');
+        }
+        else 
+        {
+          alert( num + '홀수');
+        }
+      }
+          
+      
+
+
+
+
   </script>
 </body>
 </html>
