@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>도전문제</title>
+</head>
+
+<body>
+  <h1>도전문제</h1>
+
+  <script>
+    //수 입력 받기
+    //입력이 취소되면 '입력 취소'
+    //홀수면 '홀수' 짝수면 '짝수'
+
+   /*  let num = prompt('수를 입력해 주세요');
+
+
+    if (num === null)
+    {
+      alert('입력 취소');
+    }                           //입력취소 한덩어리
+    else
+    {
+      if ( num & 2 == 0 ){
+        alert(num + '짝수');
+      }else{
+        alert(`${num} 홀수`);
+      }
+    }        */                  //홀짝 한덩어리 노란색 중괄호
+      
+
+
+
+    //국어, 영어, 수학 점수 입력 받아서 평균, 평가 출력
+    //점수 입력 -> 3개 저장
+    //평균 = ( 국어점수 + 영어 + 수학 ) / 과목 수
+    //평가 => 평균에 따라 수, 우, 미, 양, 가
+    //결과 => 콘솔창 출력 ex)91점-->수
+
+   /*  let kor = Number ( prompt ( '국어 점수를 입력해주세요 ( 0 ~ 100 )' ) );
+    let eng = Number ( prompt ( '영어 점수를 입력해주세요 ( 0 ~ 100 )' ) );
+    let math = Number ( prompt ( '수학 점수를 입력해주세요 ( 0 ~ 100 )' ) );
+
+    let avg = parseInt( kor + eng + math )  / 3 ;
+
+    let grade; //평가 저장 */
+
+/*     if ( avg >= 90 ){
+      alert( avg + '점은 수 입니다' );
+    } else if ( avg > 80 >= ) {
+      alert( avg + '점은 우 입니다' );
+    } else if ( avg >= 70 ) {
+      alert( avg + '점은 미 입니다' );
+    } else if ( avg >= 60 ) {
+      alert( avg + '점은 양 입니다' );
+    } else {
+      alert( avg + '점은 가 입니다' );
+    }
+ */
+
+
+   /*  if(avg >= 90)
+    {
+      grade = '수';
+    }
+    else if(avg >= 80)
+    {
+      grade = '우';
+    }
+    else if(avg >= 70)
+    {
+      grade = '미';
+    }
+    else if(avg >= 60)
+    {
+      grade = '양';
+    }
+    else 
+    {
+      grade = '가';
+    }
+
+    console.log( avg + '점 ->' + grade + '입니다');
+ */
+
+
+    //switch문 : 조건이 여러개 일 때 if문 대신 사용
+
+
+
+   /*  switch( parseInt(avg / 10) )    //조건이 많을 때 if문 대신
+    {
+      case 10 : 
+      case 9 : grade = '수'; break;
+      case 8 : grade = '우'; break;
+      case 7 : grade = '미'; break;
+      case 9 : grade = '양'; break;
+      default : grade = '가';
+    }
+
+    console.log( avg + '점 ->' + grade + '입니다'); */
+
+
+
+    //평균을 7로 나눈 나머지 => 요일
+    //0 -> 일요일 ~ 6 -> 토요일
+
+
+   // let week;
+    //let week = ' ';
+
+    /* switch( avg % 7 )
+    {
+      case 0 : week = '일요일'; break;
+      case 1 : week = '월요일'; break;
+      case 2 : week = '화요일'; break;
+      case 3 : week = '수요일'; break;
+      case 4 : week = '목요일'; break;
+      case 5 : week = '금요일'; break;
+      default : week = '토요일';
+    } */
+    
+   // console.log( `나머지 ${avg % 7} -> ${week} `)
+
+
+    let age = Number(prompt('나이 입력 : '));
+    
+    //삼항연산자
+    //조건 ? 조건 만족 처리 : 만족x 처리 ;
+
+    (age >= 18) ? alert ( `${age} 세 판매 가능!` ) : alert ( `${age} 세 판매 불가능!` );
+
+    //변수 넣을 때 `${  }`
+
+  </script>
+</body>
+
+</html>

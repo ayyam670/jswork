@@ -10,21 +10,20 @@
 
     
     //값 입력받기
-    let a = prompt('홀, 짝 입력해주세요');
+    let a;
 
-    //난수 생성
-    com = Math.floor(Math.random() % 2) ;
+    let com;
 
+    while (true){
+      a = prompt('홀 : 1, 짝 :0 입력해주세요');
+      com = Math.floor(Math.random() * 2);
 
-    if( com === 0 && a === '홀'){
-      alert('아니다');
-    } else if( com === 0 && a === '짝'){
-      alert('맞다');
-    } else {
-      alert('맞다') ;
-      break;
+      if ( a == com ){
+        alert('맞춤')
+        break;
+      }
+        alert('틀림')
     }
-
 
 
   </script>

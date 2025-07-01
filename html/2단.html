@@ -7,15 +7,19 @@
   <style>
     #container{
       border:  1px solid #ccc;
-      width: 960px;
-      padding: 20px;
-      margin: 0 auto;
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: space-between; */
+      /* justify-content: space-around; */
+      justify-content: space-evenly;
       /* 화면 중앙에 위치 margin: 0 auto; */
     }
     .green{
       color: rgb(46, 175, 46);
     }
     header{
+      width: 100%;
       border: 1px solid #ccc;
       padding: 10px;
       margin-bottom: 20px;
@@ -23,22 +27,28 @@
     }
     section{
       border: 1px solid #ccc;
-      float: left;
-      width: 620px;
+      background-color: beige;
+      width: 70%;
       padding: 20px;
       margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    section h3{
+      width: 100%;
     }
     aside{
       border: 1px solid #ccc;
-      width: 220px;
+      width: 20%;
       padding: 20px;
-      float: right;
       background-color: #c9c7c7;
       margin-bottom: 20px;
     }
     footer{
       border: 1px solid #ccc;
-      clear: both;
+      width: 100%;
       /* 플로팅 해제 clear: both; */
       padding: 10px;
     }
