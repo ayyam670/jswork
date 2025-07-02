@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0702</title>
+</head>
+<body>
+  <script>
+  /* let num = prompt('숫자를 입력해주세요')
+
+  if(num === null)
+  {
+    console.log('입력취소');
+    } 
+    else if(parseInt(num) % 3 == 0)
+    {
+      console.log('3의 배수입니다.');
+    } 
+    else 
+    {
+      console.log('3의 배수가 아닙니다')
+  } */
+
+  //도전 1
+  /* let width = prompt('가로값 입력');
+  let height = prompt('세로값 입력');
+  let area = width * height;
+  
+  alert(`넓이는 ${area} 입니다`); */
+
+
+  //도전 2
+  /* let birth = prompt('태어난 연도 입력','1994');
+  let age = 2025 - birth;
+
+  document.write(`태어난연도는 ${birth} 이고 나이는 ${age} 입니다`); */
+
+  //도전 1
+  /* let num = prompt('숫자 입력');
+
+  if( num != null)
+  {
+    if( num % 2 == 0)
+      {
+        alert( `${num} 는 짝수` );
+      }
+      else
+      {
+        alert( `${num} 는 홀수` );
+      }
+  }
+  else
+  {
+    alert('입력취소')
+  } */
+  
+  //도전 2
+  /* let kor = parseInt(prompt('국어점수'));
+  let eng = parseInt(prompt('영어점수'));
+  let math = parseInt(prompt('수학점수'));
+
+  avg = (kor + eng + math) / 3;
+
+  switch(parseInt(avg/10))
+  {
+    case 10 :
+    case 9 : grade = '수'; break;
+    case 8: grade = '우'; break;
+    case 7: grade = '미'; break;
+    case 6: grade = '양'; break;
+    default : grade = '가';
+  }
+   document.write(`평균은 ${avg}이고 등급은 ${grade}이다`); */
+
+
+   //교재 535p
+   //입장객 수 입력받고 앉을 수 입력 받고 배치 몇줄인가.
+
+
+   /* let man = prompt('사람 수 입력');
+   let seat = prompt('앉을 수 입력');
+
+
+   if(man % seat == 0)
+   {
+    rowseat = man / seat;
+   } else {
+    rowseat = parseInt(man / seat) +1;
+   }
+    document.write(rowseat); */
+
+  
+
+   //중첩 for문
+   /* let sum = 0;
+
+   for(i = 1; i < 6; i++)
+   {
+    sum += i;
+   }
+   console.log(sum); */
+
+   //도전 1
+   /* let hol=0;
+   let jjak=0;
+
+   for(let i =1; i<101; i++)
+   {
+    if(i % 2 == 0){
+      hol+=i;
+    }else {
+      jjak+=i;
+    }
+   }
+   console.log(hol, jjak) */
+
+   //도전 2
+   /* let sum = 0;
+   for(let i=1; i<101; i++)
+   {
+    if(i % 5 == 0){
+      sum +=i;
+    }
+   }
+   console.log(sum); */
+
+   //도전 3
+   /* let n = prompt('숫자 입력');
+   let fac = 1;
+   for(let i=n; 1<=i; i--)
+   {
+    fac *=i;
+   }
+   console.log(fac); */
+
+   //도전 6
+   /* let max = parseInt(prompt('숫자입력'));
+   let cnt = 0;
+
+   for(let i=1; i<=max; i++)
+   {
+    if(i % 3 == 0){
+      document.write(`${i} `);
+      cnt ++;
+    }
+   }
+    document.write(`<br>${cnt}개`); */
+
+
+    /* function addNumber(num1, num2)
+    {
+      let sum = num1 + num2;
+      return sum;
+    }
+    let result = addNumber(2,3);
+    document.write(`${result}`); */
+
+
+    function addNum(min, max)
+    {
+      let sum = 0;
+      for(let i=min; i<=max; i++)
+      {
+        sum += i;
+      }
+      return sum;
+    }
+
+
+
+  </script>
+</body>
+</html>
