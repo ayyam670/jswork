@@ -23,7 +23,7 @@
 
 
     // 1에서 100까지 3의 배수이면서 5의 배수인 수의 갯수 구하기
-    let cnt = 0;
+    /* let cnt = 0;
 
     for ( let i = 1; i <= 100; i++ )
     {
@@ -33,7 +33,24 @@
       }
     }
     console.log( `3 & 5의 배수 갯수 = ${cnt}개` );
-    
+     */
+
+    let n = prompt('숫자입력');
+
+    let cnt = 0;
+
+    for( let i=1; i<=n; i++)
+    {
+      if(n % 3 == 0)
+      {
+        cnt++
+        console.log(n + ' 3의배수입니다');
+      }else
+      {
+        console.log(n + ' 은 아닙니다');
+      }
+      console.log(cnt + '개');
+    }
 
   </script>
 </body>

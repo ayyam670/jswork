@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성적처리</title>
+</head>
+<body>
+  <h3>성적처리</h3>
+  <script>
+    //성적처리 함수 선언
+    function sungjuk(name, kor, eng, math)
+    {
+      //총점
+      let sum = kor + eng + math;
+
+      //평균
+      let avg = (sum) / 3
+
+      //등급
+      let grade;
+      if(avg >=90){
+        grade = 'A'
+      }else if (avg >= 80){
+        grade = 'B'
+      }else if (avg >= 70){
+        grade = 'C'
+      }else if (avg >= 60){
+        grade = 'D'
+      }else {
+        grade = 'F'
+      }
+
+      switch(parseInt(avg / 10))
+      {
+        case 10 : 
+        case 9 : grade = 'A'; break;
+        case 8 : grade = 'B'; break;
+        case 7 : grade = 'C'; break;
+        case 6 : grade = 'D'; break;
+        default : grade = 'F';
+      }
+
+
+      //이름 총점 평균 등급(콘솔 창)
+      return (`<tr>
+        <td>${name}</td>
+        <td>${}</td>
+        <td>${}</td>
+        <td>${}</td>
+          `)
+      
+
+    }
+    //필드명 출력(콘솔 창)
+
+    document.write(`<table>
+      <tr>
+        <td>이름</td>
+        <td>총점</td>
+        <td>평균</td>
+        <td>등급</td>
+      </tr>
+      </tabel> `)
+      
+
+
+
+    //성적자료 넘김(함수 호출)
+
+
+
+
+
+  </script>
+</body>
+</html>

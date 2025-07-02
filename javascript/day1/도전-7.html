@@ -4,26 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    table, td{
+      border: 1px solid #ccc ;
+      background-color: #ddd;
+      padding: 30px;
+      border-collapse: collapse;
+    }
+  </style>
 </head>
 <body>
   <script>
+    //자리배치도
+
+    //사람 수 : personNum
+    //한줄 사람 수 : colNum
+    //줄 수 : rowNum   (사람수/한줄수 (나머지가 없으면 O , 나머지가 있으면 +1)
+    //의자 번호 : seatNum
+    //배치도 : layout
+
+
     //입장객 수와 한 줄에 앉을 사람 수 입력 받기
-    let per = prompt('입장객 수를 입력해주세요');
-    let sit = prompt('한 줄에 앉을 사람 수를 입력해주세요');
     
 
+    let personNum = prompt('사람 수를 입력해주세요');
+    let colNum = prompt('한 줄에 앉을 사람 수를 입력해주세요');
+    let rowNum = parseInt(personNum / colNum);
+    //rowNum = personNum % colNum == 0 ? rowNum : ++rowNum;
+    if(personNum % colNum != 0)
+    {
+      rowNum++;
+    }
+    let seatNum = 0;
+    let layout = "<table border ='1'><caption>자리배치도</caption>";
 
+    for(let i=1; i<=rowNum; i++) //tr
+    {
+      layout += "<tr>"
+      for(let j=1; j<=colNum; j++) //td
+      {
+        seatNum++;
+        layout += `<td>좌석 ${seatNum}</td>`;
+        if(personNum <= seatNum)
+        {
+          break;
+        }
+      }
+      layout += "</tr>";
+    }
+    
+    layout += "</table>";
 
-    //좌석 배치하기
+    document.write(layout);
+      
+    // min에서 max까지 홀수합과 짝수합 구하기
+    
+    let min = 5 ;
+    let max = 10 ;
+    let hol = 0;
+    let jjak = 0;
 
-
-
-
-    //좌석 번호를 문서에 표로 만들기
-
-
-
-
+    for(let i=min; i<=max; i++)
+    {
+      if(i % 2 == 0)
+      {
+        jjak += i ;
+      }
+      else
+      {
+        hol += i;
+      }
+    }
+    console.log(`짝수의 합은 ${jjak} 홀수의 합은 ${hol}`)
+    
   </script>
 </body>
 </html>
