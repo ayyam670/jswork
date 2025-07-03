@@ -12,26 +12,38 @@
     function sungjuk(name, kor, eng, math)
     {
       //총점
-      let sum = kor + eng + math;
+      let total = kor + eng + math;
 
       //평균
-      let avg = (sum) / 3
+      let avg = parseInt(total / 3);
 
       //등급
       let grade;
       if(avg >=90){
-        grade = 'A'
+        grade = 'A';
       }else if (avg >= 80){
-        grade = 'B'
+        grade = 'B';
       }else if (avg >= 70){
-        grade = 'C'
+        grade = 'C';
       }else if (avg >= 60){
-        grade = 'D'
+        grade = 'D';
       }else {
-        grade = 'F'
+        grade = 'F';
       }
 
-      switch(parseInt(avg / 10))
+      console.log(`${name} \t ${total} \t ${avg} \t ${grade}`);
+    }
+    
+    console.log(`이름  총점  평균  등급`);
+    
+    
+      sungjuk('aaa', 80, 75, 90); 
+      sungjuk('bbb', 90, 88, 99); 
+      sungjuk('ccc', 100, 85, 94);
+    
+
+
+      /* switch(parseInt(avg / 10))
       {
         case 10 : 
         case 9 : grade = 'A'; break;
@@ -39,29 +51,29 @@
         case 7 : grade = 'C'; break;
         case 6 : grade = 'D'; break;
         default : grade = 'F';
-      }
+      } */
 
 
       //이름 총점 평균 등급(콘솔 창)
-      return (`<tr>
+      /* return (`<tr>
         <td>${name}</td>
         <td>${}</td>
         <td>${}</td>
         <td>${}</td>
-          `)
+          `) */
       
 
-    }
+    
     //필드명 출력(콘솔 창)
 
-    document.write(`<table>
+    /* document.write(`<table>
       <tr>
         <td>이름</td>
         <td>총점</td>
         <td>평균</td>
         <td>등급</td>
       </tr>
-      </tabel> `)
+      </tabel> `) */
       
 
 

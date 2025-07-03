@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성적처리</title>
+</head>
+<body>
+  <h3>성적처리</h3>
+  <script>
+    //학생 객체 생성 함수
+    //생성자 함수
+    function Student(name, kor, eng, math, art)
+    {
+      {
+        //객체의 속성 : 속성값
+        this.name = name
+        this.kor = kor
+        this.eng = eng
+        this.math = math
+        this.art = art
+      }
+
+      //공통 영역에 매소드
+      //총점
+      Student.prototype.getSum = function()
+      {
+        return this.kor + this.eng + this. math + this.art
+      }
+      //평균
+      Student.prototype.getAvg = function()
+      {
+        return (this.kor + this.eng + this. math + this.art) / 4
+      }
+
+      //배열에 학생객체 만들어서 저장
+      let stuArr = 
+      [
+        new Student('홍길동',96, 98, 92, 98),
+        new Student('성춘향',88, 74, 78, 92),
+        new Student('이몽룡',69, 89, 92, 78),
+        new Student('임영웅',97, 95, 89, 98),
+        new Student('성유리',66, 80, 92, 94),
+      ]
+      console.log();
+    }
+    //출력( 콘솔창)
+    console.log(`이름 총점 평균`);
+
+
+    //배열 순환 전체 학생 출력
+
+    
+  </script>
+</body>
+</html>

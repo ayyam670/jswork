@@ -11,8 +11,89 @@
   <h1>노드</h1>
   <h1>뷰</h1>
   <script>
+    //배열 : 여러개의 값의 하나의 이름에 저장
+    let score = [90, 100, 40, 100];
+    console.log(score[0]); //인덱스 (방번호=첨자)
+
+
+
     let subject = document.querySelectorAll("h1");
     //subject[0]
+
+    //배열 순서
+    console.log(score);
+    for(let i=0; i<score.length; i++)
+    {
+      console.log(`index : ${i} => element : ${score[i]}`);
+    }
+
+    //for in => index
+    for(let idx in score)
+    {
+      console.log(`index : ${idx} => ele : ${score[idx]}`);
+    }
+
+    //for of => element(값)
+    for(let ele of score)
+    {
+      console.log(ele);
+    }
+
+    //for in, for of 합친거
+    let colors = ['주황', '노랑', '초록'];
+    colors.forEach((ele,idx) =>
+    {
+      console.log(`index = ${idx}, element = ${ele}`);
+    });
+
+
+
+    //추가
+    console.log(colors);
+    colors.push('파랑');
+    colors.unshift('빨강');
+    colors.pop(); //맨 뒤에꺼 그냥 하나 뺌
+    colors.shift();//맨 앞에꺼 그냥 하나 뺌
+    colors.splice(1,0,'초록','파랑', '남색'); // 1번부터 0개 삭제하고 초록 파랑 남색 추가
+    colors.splice(4,1);
+
+
+    //중복체크
+    if(colors.indexOf('보라') == -1)
+    {
+      colors.push('보라')
+      console.log(colors);
+    }else
+    {
+      alert('중복된 색입니다.');
+    }
+
+    //map() => 기존의 배열의 요소를 처리해서 새로운 배열 생성
+    console.log(score);
+    let maparr = score.map((ele) => parseInt(ele *1.1));
+    
+    console.log(maparr);
+
+    //조건에 맞는 요소 추출
+    let filterArr = maparr.filter((ele,ind) => ele < 100);
+    console.log(filterArr);
+
+
+    //배열의 합
+    let arrhap = score.reduce((pre,curr) => pre + curr);
+    score.push(arrhap);
+    console.log(score);
+    console.log(arrhap);
+
+    //정렬
+    //문자인 경우
+    console.log(colors.sort()); //오름차순(기본값)
+    console.log(colors.sort().reverse());
+
+    //숫자인 경우
+    console.log(maparr.sort((a,b) => a-b)); //오름차순
+    console.log(maparr.sort((a,b) => b-a)); //내림차순
+
   </script>
 </body>
 </html>
