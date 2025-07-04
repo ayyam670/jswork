@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+  font-family: "맑은고딕",돋움,굴림;
+}
+
+#container{
+  width: 1000px;
+  margin: 0 auto;
+}
+/*헤더영역*/
+header{
+  width: 1000px;
+  display: inline-block;
+  text-align: center;
+}
+nav{
+  background-color: black;
+  height: 50px;
+}
+nav li{
+  float: left;
+  list-style: none;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+nav li:hover{
+  background-color: pink;
+  color: #000;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.login{
+  float: right;
+}
+/*좌측 사이드영역*/
+aside{
+  float: left;
+  width: 200px;
+  height: 700px;
+  text-align: center;
+  background-color: #ccc;
+}
+
+/*섹션영역*/
+section{
+  text-align: center;
+  width: 600px;
+  height: 700px;
+  padding: 20px;
+  overflow: hidden;
+  float: left;
+}
+
+/*회원가입 폼영역*/
+form{
+  width: 500px;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+form fieldset{
+  border: none;
+}
+legend{
+  font-weight: bold;
+}
+form li{
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.5);
+  list-style: none;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+label{
+  width: 130px;
+  float: left;
+}
+input{
+  width : 250px;
+  padding: 3px;
+}
+button{
+  width: 150px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ddd;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*우측 사이드영역*/
+.rightC{
+  float: left;
+}
+
+
+/*푸터 영역*/
+footer{
+  clear: both;
+  text-align: center;
+  background-color: #978d8d;
+  height: 100px;
+  line-height: 100px;
+}

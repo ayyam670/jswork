@@ -14,6 +14,26 @@
 
     <script>
         // 출력 버튼이 클릭되면 입력된 단만 출력
+        let danIp = document.querySelector('#dan');
+        let aBtn = document.querySelector('#btn');
+        let resultDiv = document.querySelector('#result')
+
+        
+
+        aBtn.onclick = function (){
+            let dan = parseInt(danIp.value);
+
+            let result = `<h3>== ${dan} 단 ==</h3>`;
+
+            for(let j = 1; j < 10; j++){
+                result += `${dan} X ${j} = ${dan*j}<br>`
+            }
+        
+            resultDiv.innerHTML = result;
+
+        }
+
+        
     </script>
 </body>
 </html>
