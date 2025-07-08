@@ -10,7 +10,8 @@ let suIp2 = document.querySelector('#num2');
 
 let resultDiv = document.querySelector('#result');
 
-
+//minus(parseInt(suIp1.value),parseInt(suIp2.value));
+//minus 주석처리된거 대신
 
 
 
@@ -27,6 +28,7 @@ aBtn.onclick = function sum(){
 
 
 sBtn.onclick = function minus(){
+//sBtn.onclick = function minus(su1, su2){
   let su1 = parseInt(suIp1.value);
   let su2 = parseInt(suIp2.value);
   let result = su1 - su2;
